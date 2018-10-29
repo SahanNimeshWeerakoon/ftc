@@ -1,0 +1,26 @@
+<div class="container services">
+  <div ng2-carouselamos class="slides-wrapper"
+        [items]="items"
+        [$prev]="prev"
+        [$next]="next"
+        [$item]="item">
+  </div>
+  
+  <ng-template #prev>
+    <i class="fa fa-angle-left"></i>
+  </ng-template>
+
+  <ng-template #next>
+    <i class="fa fa-angle-right"></i>
+  </ng-template>
+
+  <div class="content">
+    <ng-template #item let-item let-i="index">
+      <div class="items">
+        <p>
+          {{ item.name }}
+        </p>
+      </div>
+    </ng-template>
+  </div>
+</div>

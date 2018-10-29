@@ -1,0 +1,10 @@
+.services{
+    width: 90%;
+    margin-left: 5%;
+}
+.services .items p{
+    color: #999;
+}
+.services .items{
+    width: 50%;
+}

@@ -1,0 +1,52 @@
+<div id="section2" class="container container-fluid about-us">
+  <div class="mobile-about">
+      <button (click)="handleLeftClick()">{{ leftButton }}</button>
+      <button (click)="handleRightClick()">{{ rightButton }}</button>
+  </div>
+  <div class="row">
+    <div class="col-md-3 buttons">
+        <button (click)="handleLeftClick()"><i class="fa fa-angle-left"></i> {{ leftButton }}</button>
+    </div>
+    <div class="col-md-6 content">
+        <div class="Mission" *ngIf="leftButton=='Vission' && rightButton=='About Us'">
+          <h3>Mission</h3>
+          <hr/>
+          <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
+              a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+              of Lorem Ipsum.
+          </p>
+        </div>
+        <div *ngIf="leftButton=='Mission' && rightButton=='Vission' " class="AboutUs">
+          <h3>About Us</h3>
+          <hr/>
+          <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
+              a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+              of Lorem Ipsum.
+          </p>
+        </div>
+        <div class="Vision" *ngIf="leftButton=='About Us' && rightButton=='Mission'">
+          <h3>Vission</h3>
+          <hr/>
+          <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
+              a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+              of Lorem Ipsum.
+          </p>
+        </div>
+    </div>
+    <div class="col-md-3 buttons">
+        <button (click)="handleRightClick()">{{ rightButton }}<i class="fa fa-angle-right"></i></button>
+    </div>
+  </div>
+</div>

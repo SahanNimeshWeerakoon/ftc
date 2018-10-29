@@ -1,0 +1,59 @@
+.about-us{
+    padding: 1em;
+    background: #262626;
+    margin-bottom: 30px;
+}
+.mobile-about{
+    text-align: center;
+    display: none;
+}
+.container .row div{
+    text-align: center;
+}
+.container .row div h3{
+    color: #AAA;
+}
+.container .row div hr{
+    border-color: #fff;
+    width: 10%;
+    margin-left: 45%;
+}
+.container .row div p{
+    color: #888;
+    font-size: 0.9em;
+}
+.container .row .buttons i{
+    margin: 0 0.5em;
+}
+.container .row .buttons button{
+    font-size: 1.5em;
+    height: 300px;
+    background: transparent;
+    color: #999;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 5px;
+    width: 100%;
+}
+.container .row .buttons button:focus{
+    outline: none;
+}
+
+
+@media screen and (max-width: 426px) {
+    .mobile-about{
+        display: block;
+    }
+    .mobile-about button{
+        background: transparent;
+        color: #999;
+        border: 1px solid rgba(255,255,255,0.1);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mobile-about button:focus{
+        outline: none;
+    }
+    .container .row .buttons{
+        display: none;
+    }
+}
