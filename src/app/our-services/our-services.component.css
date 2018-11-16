@@ -1,10 +1,26 @@
 .services{
-    width: 90%;
-    margin-left: 5%;
+    margin-top: 50xp;
+    margin-bottom: 70px;
 }
-.services .items p{
+.services h2{
     color: #999;
+    text-align: center;
 }
-.services .items{
-    width: 50%;
+.services hr{
+    border-color: #32CD32;
+    width: 10%;
+    margin: auto;
+}
+.row{
+    width: 75%;
+    margin: 30px auto;
+}
+mat-panel-title{
+    color: #AAA;
+}
+mat-expansion-panel{
+    background: #444;
+}
+mat-expansion-panel p{
+    color: #999;
 }

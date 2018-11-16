@@ -6,32 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-services.component.css']
 })
 export class OurServicesComponent implements OnInit {
-  items: Array<any> = [];
-  constructor() {
-    this.items = [
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' },
-      { name: 'test1' }
-    ];
-  }
+
+  constructor() {}
 
   ngOnInit() {
   }
